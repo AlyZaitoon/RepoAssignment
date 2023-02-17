@@ -1,0 +1,26 @@
+git init
+created repo on github.com
+git add Assignment 2 creation
+git commit -m "Creating Assignment 2.cpp"	
+git remote add origin (repolink)
+git branch -M main
+git push -u origin main
+git branch "averagebranch"
+git branch "minbranch"
+git checkout averagebranch
+git add Assignment2.cpp
+git commit -m "Added Average function"
+git push -u origin averagebranch
+git checkout minbranch
+git add Assignment2.cpp
+git commit -m "Added Min function"
+git push -u origin minbranch
+git checkout main
+git merge averagebranch
+git rebase minbranch
+git rebase --continue
+resolved confilcts using visual studio
+git rebase --continue 
+git add Assignment2.cpp
+git commit -m "Full version"
+git push -u origin main
