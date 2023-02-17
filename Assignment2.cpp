@@ -11,9 +11,13 @@ int getVectorSum(vector<int>& input){
     }
     return sum;
 }
+float getAverage(vector<int>& input){
+    return getVectorSum(input)/(1.0*input.size());
+}
 
 int main(){
     vector<int> test = {1,2,3,4,5,6,7,8,9,10};
     cout << getVectorSum(test)<<endl;
+    cout << getAverage(test)<<endl;
     return 0;
 }
